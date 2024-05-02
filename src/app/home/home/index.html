@@ -1,0 +1,39 @@
+<app-header></app-header>
+<main>
+    <div class="botao-class">
+        <button type="button" class="btn btn-success" id="cadastro-btn" routerLink="/formulario">Novo cliente</button>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Cód.</th>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Nome Fantasia</th>
+                    <th>Endereço</th>
+                    <th>Número</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let cliente of clientes">
+                    <td>{{ cliente.id }}</td>
+                    <td [ngClass]="{'opcFISICA': cliente.tipoPessoa === 'FISICA', 'opcJURIDCA': cliente.tipoPessoa === 'JURIDICA'}">
+                        <strong>{{ cliente.tipoPessoa }}</strong>
+                    </td>
+                    <td>{{ cliente.nome }}</td>
+                    <td>{{ cliente.nomeFantasia }}</td>
+                    <td>{{ cliente.endereco }}</td>
+                    <td>{{cliente.numero}}</td>
+                    <td>{{ cliente.email }}</td>
+                    <td> <button type="button" class="btn btn-outline-danger" (click)="excluirCliente(cliente.id)">Excluir</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</main>

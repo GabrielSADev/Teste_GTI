@@ -1,0 +1,65 @@
+.titulo{
+    color: #62C935;
+    font-size: 2.8rem;
+    margin-bottom: 4%;
+    margin-top: 3.5%;
+}
+
+.w-full{
+    padding-left: 7%;
+    width: 75%;
+}
+
+.mb-4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-right: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgb(9, 78, 9);
+}
+input{
+    font-size: 1.1rem;
+}
+
+.form-control{
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.155);
+}
+
+#botaoDiv{
+    display: flex;
+justify-content: flex-end;
+}
+#botao-enviar{
+    font-size: 2rem;
+    padding: 0 2%;
+}
+#botao-voltar{
+    font-size: 2rem;
+    padding: 0 2%;
+    margin-right: 5%;
+    color: white;
+    background-color: rgba(42, 1, 105, 0.758);
+}
+#botao-voltar:hover{
+    background-color: rgba(67, 5, 160, 0.901);
+    transition: 0.35s;
+}
+#pessoaFisicaBtn{
+    margin-right: 2rem;
+}
+
+#div-tipo{
+    width: 30%;
+    min-width: 11rem;
+  }
+
+  strong{
+    color: red;
+  }
